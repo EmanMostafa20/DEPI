@@ -57,12 +57,12 @@ public class SwagLabsTests {
 @Test(dependsOnMethods = "login")
 public void checkFooter() throws IOException {
         //JavaScript executer
-  /*  JavascriptExecutor jsExecuter= (JavascriptExecutor) driver;
+   JavascriptExecutor jsExecuter= (JavascriptExecutor) driver;
     jsExecuter.executeScript("arguments[0].scrollIntoView(true);",inventoryPage.getFooter());
     Assert.assertTrue(inventoryPage.getFooter().isDisplayed());
     TakesScreenshot screenshot = (TakesScreenshot) driver;
     File screenshotFile= screenshot.getScreenshotAs(OutputType.FILE);
-    Files.copy(screenshotFile,new File("./footer.png"));*/
+    Files.copy(screenshotFile,new File("./footer.png"));
 //Scroll with selenium actions
     Actions action = new Actions(driver);
     action.moveToElement(inventoryPage.getFooter());
